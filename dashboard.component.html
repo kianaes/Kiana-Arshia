@@ -1,0 +1,26 @@
+<div class="header d-flex align-items-center">
+    <div class="right-content col-9">
+        <img src="../../assets/User-PNG-Photos.png" class="image" alt="">
+        <span>نام کاربر</span>
+    </div>
+    <div class="left-content col-3 d-flex justify-content-end">
+        <button class="logout">
+            خروج
+        </button>
+    </div>
+</div>
+<div class="menu">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+            منو اصلی
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button" (click)="goToPath('/dashboard/grades')">نمرات</button>
+            <button class="dropdown-item" type="button" (click)="goToPath('/dashboard/food-reserve')">رزرو غذا</button>
+        </div>
+    </div>
+</div>
+<router-outlet>
+
+</router-outlet>
